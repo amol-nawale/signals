@@ -30,7 +30,7 @@ with st.container():
     end_date = date.today()
     print(end_date)
     def getMyPortfolio(stocks = stocksymbols ,start = startdate , end = end_date):
-        data = web.get_data_yahoo(stocks , data_source='yahoo' , start = start ,end= end )
+        data = web.get_data_yahoo(stocks  , start = start ,end= end )
         return data
 
     data = getMyPortfolio(stocksymbols)
